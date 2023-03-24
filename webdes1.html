@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<link href="style.css" rel="stylesheet" xmlns="http://www.w3.org/1999/html">
+<link href="style1.css" rel="stylesheet">
+<link href="style2.css" rel="stylesheet">
+<link rel="stylesheet" href="style3.css">
+<html>
+
+<head>
+    <title>Simple web Development Template</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            background: url('smile.png');
+            width: 180px;
+            border-radius: 50px;
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-list li a:hover {
+            color: grey;
+        }
+
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+        .sectionzero {
+            background-color: indianred;
+            height: 400px;
+        }
+        .firstsection {
+            background-color: green;
+            height: 400px;
+        }
+        .sectionhalf {
+            background-color: aquamarine;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 130%;
+            margin: auto;
+        }
+        .secondsection {
+            background-color: blue;
+            height: 1000px;
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .secondhalf {
+            width: 100%;
+        }
+
+        .secondhalf img {
+            width: 100%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        .text-small {
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-sm {
+            -webkit-appearance: button;
+            -moz-appearance: button;
+            appearance: button;
+
+        }
+
+        .section {
+            color: black;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 130%;
+            margin: auto;
+        }
+
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+
+        .paras {
+            padding: 0px 65px;
+        }
+
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar background">
+    <ul class="nav-list">
+
+        <li><a >web-programming and engineering cases</a></li>
+
+    </ul>
+
+    <div class="rightNav">
+        <button onclick="location.href='https://forms.gle/yNMjuFFR7DjR5Pdy9'" type="button">
+            Rate me!</button>
+    </div>
+</nav>
+<section class="sectionzero">
+    <div class="paras">
+        <h1 class="sectionTag text-big">1 case</h1>
+
+
+        <div class="header">
+            <h1>picture 200x200 </h1>
+            <div>
+                <table id=”tab”>
+                    <td><img src="koala.jpeg"></td>
+                </table>
+            </div>
+
+
+
+
+</section>
+<section class="firstsection">
+    <div class="box-main">
+        <div class="firstHalf">
+            <h1 class="text-big" id="web">2 case</h1>
+
+
+            <table>
+
+                <th><a href="" class="emodji"> </a></th>
+                <th><a href="" class="man">BOO</a></th>
+                <th>
+                    <div class="menu">
+                        <button class="menu">menu</button>
+                        <div class="menu-content">
+                            <a href="#">main</a>
+                            <a href="" class="novosti">new</a>
+                            <a href="#">about</a>
+                        </div>
+                    </div>
+                </th>
+            </table>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="secondsection">
+    <div class="box-main">
+        <div class="firstHalf">
+            <h1 class="text-big" id="program">
+                3 case
+            </h1>
+            <div class="flex-container">
+                <div class="card one">
+                    <div class="front">
+                        <img src="card-11.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="sectionhalf">
+    <div class="paras">
+        <h1 class="sectionTag text-big">4 case</h1>
+        <label for="cars">TRIANGLES:</label>
+        <form action="https://byjus.com/maths/types-of-triangles/">
+            <label for="cars">Choose a triangle:</label>
+            <select name="cars" id="cars">
+                <option value="acute">acute</option>
+                <option value="obtuse">obtuse</option>
+                <option value="right">right</option>
+             </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+            </section>
+    </div>
+
+
+
+
+</section>
+<section class="section">
+    <div class="paras">
+        <h1 class="sectionTag text-big">5 case</h1>
+
+
+        <div class="header">
+            <h1>mini version</h1>
+        </div>
+        <div class="sidebar">
+            <h4>IB Institute</h4>
+            <ul>
+                <li><a href="https://www.ibispb.ru/">mainpage</a></li>
+                <li><a href="http://inet.ibi.spb.ru/raspisan/">schedule</a></li>
+                <li><a href="https://www.ibispb.ru/about/">about IBI</a></li>
+
+
+            </ul>
+        </div>
+        <div class="sidebar1">
+            <h4> <ahref = "https://www.ibispb.ru/news/">news</h4>
+            <p></p>
+        </div>
+        <div class="container">
+            <p></p>
+            <p></p>
+        </div>
+        <div class="footer">(c)IBI</div>
+
+
+    </div>
+
+    <div class="thumbnail">
+        <img src= "welldone.png" alt="welldone">
+    </div>
+</section>
+
+<footer class="background">
+    <p class="text-footer">
+        Timofeeva Alexandra group 193
+    </p>
+
+</footer>
+</body>
+
+</html>

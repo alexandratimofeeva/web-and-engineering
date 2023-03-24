@@ -1,0 +1,82 @@
+.flex-container {
+    height: 500px;
+    width: 700px;
+    background-color: #1a89f5;
+    padding: 50px;
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+}
+
+.card.one {
+    order: 1;
+    flex: 1;
+    width: 340px;
+    height: 500px;
+    display: block;
+}
+
+.card.one:hover {
+    display: flex;
+    background: transparent url(frame.jpg) no-repeat;
+}
+
+.card.one:active {
+    order: 1;
+    flex: 1;
+    background: transparent url(card-13.jpg) no-repeat;
+}
+
+.card {
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .6s;
+}
+
+.front,
+.back {
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .3s linear;
+}
+
+.front img {
+    height: 120%;
+}
+
+.back img {
+    height: 120%;
+}
+
+.front {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+    transform: perspective(600px) rotateY(180deg);
+
+}
+
+.card.one:hover > .front {
+    transform: perspective(600px) rotateX(-180deg);
+}
+
+.card.one:hover > .back {
+    transform: perspective(600px) rotateX(0deg);
+}
+
+.card.one:active > .front {
+    transform: perspective(600px) rotateX(-180deg);
+}
+
+.card.one:active > .back {
+    transform: perspective(600px) rotateX(0deg);
+}
+
+.card.one:active {
+    transform: rotate(720deg);
+}

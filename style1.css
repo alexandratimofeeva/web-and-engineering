@@ -1,0 +1,17 @@
+table
+{
+    width: auto;
+    font: 19px Arial;
+}
+table, th, td
+{
+    border: solid 2px #cb9c00;
+    border-collapse: collapse;
+    padding: 3px 4px;
+    text-align: center;
+    position: center;
+}
+img
+{
+    width: 100%;
+}
